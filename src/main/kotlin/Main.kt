@@ -4,7 +4,7 @@ fun main() {
     var comando: List<String>
     println("Bienvenido a Xpress Memories for Life")
     do{
-        println("¿Qué deseas hacer?\n-r Mostrar todos las notas\n-r [id] Muestra la nota con la id elegida\n-exit Salir del programa\n")
+        println(GestorNotas.menu)
         comando = readln().split(" ")
 
         when(comando[0]){
@@ -15,7 +15,16 @@ fun main() {
                     gestorNotas.buscarNota(comando[1])
                 }
             }
-
+            "-m" -> {
+                if (comando.size == 2){
+                    gestorNotas.modificarNota(comando[1])
+                }
+            }
+            "-d" -> {
+                if (comando.size == 2){
+                    gestorNotas.eliminarNota(comando[1])
+                }
+            }
         }
 
     }while (comando[0] != "-exit")
