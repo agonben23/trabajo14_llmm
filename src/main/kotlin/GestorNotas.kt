@@ -49,7 +49,7 @@ class GestorNotas(private val cargador: String) {
         for (i in notaChilds.getRange()) {
 
             if (notaChilds.item(i).nodeName == "titulo") {
-                println("introduzca el nuevo título (no introduzca nada si desea cambiarlo)")
+                println("introduzca el nuevo título (no introduzca nada si no desea cambiarlo)")
                 val nuevoTitulo = readln()
                 if (nuevoTitulo != "") {
                     notaChilds.item(i).nodeValue = nuevoTitulo
@@ -57,7 +57,7 @@ class GestorNotas(private val cargador: String) {
             }
 
             if (notaChilds.item(i).nodeName == "contenido") {
-                println("introduzca el nuevo contenido (no introduzca nada si desea cambiarlo)")
+                println("introduzca el nuevo contenido (no introduzca nada si no desea cambiarlo)")
                 val nuevoContenido = readln()
                 if (nuevoContenido != "") {
                     notaChilds.item(i).nodeValue = nuevoContenido

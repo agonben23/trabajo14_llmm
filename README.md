@@ -31,7 +31,7 @@ El archivo XML que usará se encuentra en *src\main\resources\notas.xml*
 
 El programa ha sido creado con el entorno gráfico IntelliJ IDEA, por lo cual se deberá ejecutar en dicho programa.
 
-En caso de no conocer el funcionamiento de este entorno gráfico en estos enlaces encontrará información ello:
+En caso de no conocer el funcionamiento de este entorno gráfico en estos enlaces encontrará información sobre ello:
 
 [Guia de instalación de IntelliJ](https://www.jetbrains.com/help/idea/installation-guide.html)
 
@@ -57,3 +57,19 @@ Aparecerá el menú con las opciones :
 ~~~
 
 En el caso de usar una id, la aplicación consultará el [atributo id de la etiqueta nota](#xml)
+
+Seleccione la opción deseada, por ejemplo :
+
+- Si quiere mostrar la nota con la id *nota1*, deberá usar el siguiente comando 
+~~~
+-r nota1
+~~~
+- Si prefiere modificar la nota con la id *nota2*, deberá usar el siguiente comando
+~~~
+-m nota2
+~~~
+
+El programa funcionará en bucle hasta que el usuario introduzca el comando de salida del programa
+~~~
+-exit
+~~~
