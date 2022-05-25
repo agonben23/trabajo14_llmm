@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <notas>
-<nota id="nota1">
-<titulo>Cosas que hacer</titulo>
-<fechaDeCreacion>2021/04/02</fechaDeCreacion>
-<contenido>Ir a comprar comida</contenido>
-</nota>
-<nota id="nota2">
-<titulo>Películas por ver</titulo>
-<fechaDeCreacion>2021/04/02</fechaDeCreacion>
-<contenido>Star Trek, Spiderman</contenido>
-</nota>
+   <nota id="nota1">
+      <titulo>Cosas que hacer</titulo>
+      <fechaDeCreacion>2021/04/02</fechaDeCreacion>
+      <contenido>Ir a comprar comida</contenido>
+   </nota>
+   <nota id="nota2">
+      <titulo>Películas por ver</titulo>
+      <fechaDeCreacion>2021/04/02</fechaDeCreacion>
+      <contenido>Star Trek, Spiderman</contenido>
+   </nota>
 </notas>

@@ -30,11 +30,11 @@ class Archivo() {
         fun exportXML(listaNotas: MutableList<Node>, file: File){
             var string = "<?xml version=\"1.0\"?>\n<notas>"
             listaNotas.forEach {
-                string += "\n<nota id=\"${obtenerAtributosEnMapKV(it as Element).getValue("id")}\">" +
-                        "\n<titulo>${it.getElementsByTagName("titulo").item(0).textContent}</titulo>" +
-                        "\n<fechaDeCreacion>${it.getElementsByTagName("fechaDeCreacion").item(0).textContent}</fechaDeCreacion>" +
-                        "\n<contenido>${it.getElementsByTagName("contenido").item(0).textContent}</contenido>" +
-                        "\n</nota>"
+                string += "\n   <nota id=\"${obtenerAtributosEnMapKV(it as Element).getValue("id")}\">" +
+                        "\n      <titulo>${it.getElementsByTagName("titulo").item(0).textContent}</titulo>" +
+                        "\n      <fechaDeCreacion>${it.getElementsByTagName("fechaDeCreacion").item(0).textContent}</fechaDeCreacion>" +
+                        "\n      <contenido>${it.getElementsByTagName("contenido").item(0).textContent}</contenido>" +
+                        "\n   </nota>"
             }
             string += "\n</notas>"
 
